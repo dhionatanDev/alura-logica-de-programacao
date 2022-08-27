@@ -1,0 +1,26 @@
+<canvas width="600" height="500"></canvas>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.font='20px Arial';
+    
+    pincel.fillStyle = 'black';
+    pincel.beginPath();
+    pincel.fillText("(50,50)",28,49,45);
+    pincel.moveTo(50,50); 
+    pincel.fillText("(50,400)",28,420,50);
+    pincel.lineTo(50,400);
+    pincel.fillText("(400,400)",380,420,50);
+    pincel.lineTo(400,400);
+    pincel.fill();
+    pincel.fillStyle = 'white';
+    pincel.beginPath();
+    pincel.fillText("(100,175)",76,170,50);    
+    pincel.moveTo(100,175);
+    pincel.fillText("(100,350)",76,370,50);
+    pincel.lineTo(100,350);
+    pincel.fillText("(275,350)",255,370,50);
+    pincel.lineTo(275,350);
+    pincel.fill();
+    
+</script>

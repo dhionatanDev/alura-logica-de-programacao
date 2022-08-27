@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    
+   
+    function pularLinha(){
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(str){
+        document.write("<big>" + str + "</big>");
+        pularLinha();
+    }
+    var nome = prompt("Informe o seu nome: ");
+    var peso = prompt ("Iforme o seu peso: ");
+    var altura = prompt ("Iforme a sua altura: ");
+    var imc = peso / (altura*altura);
+    mostra("O IMC de "+ nome +" é "+ Math.round(imc));
+   
+   
+
+</script>   
